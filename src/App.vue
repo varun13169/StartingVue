@@ -3,6 +3,11 @@
     <img src="./assets/logo.png">
 
     <hr>
+    <user-component></user-component>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <hr>
     <my-first-component></my-first-component>
 
     <hr>
@@ -10,9 +15,6 @@
 
     <hr>
     <conditional-component property="My prop"></conditional-component>
-
-    <hr>
-    <user-component></user-component>
 
     <hr>
     <router-view/>

@@ -3,23 +3,23 @@
 import Vue from 'vue'
 import router from './router'
 import vueResource from 'vue-resource'
-// import vueRouter from 'vue-router'
+import vueRouter from 'vue-router'
 import App from './App'
-// import Users from './components/Users'
-// import MyFirstComponent from './components/MyFirstComponent'
+import Users from './components/Users'
+import MyFirstComponent from './components/MyFirstComponent'
 
 
 Vue.use(vueResource);
-// Vue.use(vueRouter);
+Vue.use(vueRouter);
 
-// const myRouter = new ViewRouter({
-//   mode: 'history',
-//   base: __dirname,
-//   routes:[
-//     {path:'/', components: Users},
-//     {path:'/test', components: MyFirstComponent}
-//   ]
-// });
+const myRouter = new vueRouter({
+  mode: 'history',
+  base: __dirname,
+  routes:[
+    {path:'/', components: Users},
+    {path:'/test', components: MyFirstComponent}
+  ]
+});
 
 Vue.config.productionTip = false
 
