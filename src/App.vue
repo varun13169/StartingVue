@@ -1,9 +1,20 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+
+    <hr>
     <my-first-component></my-first-component>
+
+    <hr>
     <variable-text></variable-text>
-    <conditional-component></conditional-component>
+
+    <hr>
+    <conditional-component property="My prop"></conditional-component>
+
+    <hr>
+    <user-component></user-component>
+
+    <hr>
     <router-view/>
   </div>
 
@@ -15,17 +26,15 @@
   import MyFirstComponent from './components/myfirstcomponent';
   import VariableText from './components/variabletext';
   import ConditionalComponent from './components/conditionalcomponent';
+  import UserComponent from './components/Users';
 
   export default {
+    name: 'app',
     components: {
       ConditionalComponent,
       VariableText,
-      MyFirstComponent},
-    name: 'app',
-    component: {
       MyFirstComponent,
-      VariableText,
-      ConditionalComponent
+      UserComponent
     }
   }
 </script>

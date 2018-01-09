@@ -1,6 +1,7 @@
 <template>
     <div class="varibletext">
       <h1>{{msg}}</h1>
+      <hr>
       <p>Name: {{user.name}} <br>Company:{{user.company}} </p>
       <p v-text="user.vTextDirective"></p>
     </div>
